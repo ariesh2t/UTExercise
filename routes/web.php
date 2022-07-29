@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DiscountController;
 use App\Http\Controllers\WithdrawController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +20,4 @@ Route::get('/', function () {
 });
 
 Route::get('/withdraw', [WithdrawController::class, 'withdraw']);
+Route::get('/discount', [DiscountController::class, 'discount']);
